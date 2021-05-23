@@ -24,26 +24,8 @@
 
     <AbsoluteLayout>
 
-        <StackLayout
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Orientation="Horizontal">
 
-            <ImageButton
-               x:Name="flashButton"
-               Clicked="ImageButton_Clicked"
-                 BackgroundColor="Transparent"
-                 Source="flash_off.png"
-                 HeightRequest="40"
-                 WidthRequest="40"
-        ></ImageButton>
-
-            <Label Text="Flash" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"
-              FontSize="Body"
-               ></Label>
-
-        </StackLayout>
-
+        <StackLayout>
 
         <StackLayout>
             <Grid
@@ -79,6 +61,28 @@
                         Source="qr_overlay_bottom_right"/>
             </Grid>
         </StackLayout>
+
+        <StackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Orientation="Horizontal">
+
+            <ImageButton
+               x:Name="flashButton"
+               Clicked="ImageButton_Clicked"
+                 BackgroundColor="Transparent"
+                 Source="flash_off.png"
+                 HeightRequest="40"
+                 WidthRequest="40"
+        ></ImageButton>
+
+            <Label Text="Flash" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"
+              FontSize="Body"
+               ></Label>
+
+        </StackLayout>
+
+            </StackLayout>
     </AbsoluteLayout>
 
 </ContentPage>
