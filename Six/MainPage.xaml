@@ -4,7 +4,7 @@
              x:Class="Six.MainPage">
 
 
-    <Grid>
+    <!--<Grid>
         <ImageButton
                x:Name="flashButton"
                 VerticalOptions="Center"
@@ -16,8 +16,31 @@
                  WidthRequest="100"
         ></ImageButton>
 
+        <Label Text="Flash" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Margin="20,20,20,20"></Label>
 
 
-    </Grid>
+
+    </Grid>-->
+
+    <StackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Orientation="Horizontal">
+
+        <ImageButton
+               x:Name="flashButton"
+               Clicked="ImageButton_Clicked"
+                 BackgroundColor="Transparent"
+                 Source="flash_off.png"
+                 HeightRequest="40"
+                 WidthRequest="40"
+        ></ImageButton>
+
+        <Label Text="Flash" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"
+              FontSize="Body"
+               ></Label>
+
+    </StackLayout>
+
 
 </ContentPage>
