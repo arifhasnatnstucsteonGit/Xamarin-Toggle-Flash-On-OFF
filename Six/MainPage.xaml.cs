@@ -22,13 +22,15 @@ namespace Six
 
         void ImageButton_Clicked(System.Object sender, System.EventArgs e)
         {
+
+            isFlashOn = !isFlashOn;
             if (isFlashOn)
             {
-                isFlashOn = !isFlashOn;
+                //isFlashOn = !isFlashOn;
                 turnOFFflash();
             }
             else {
-                isFlashOn = !isFlashOn;
+                //isFlashOn = !isFlashOn;
                 turnONflash();
             }
             
