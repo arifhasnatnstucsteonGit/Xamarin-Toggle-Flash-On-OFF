@@ -28,10 +28,13 @@ namespace Six
             {
                 //isFlashOn = !isFlashOn;
                 turnOFFflash();
+                flashButton.Source = "flash_off.png";
+                
             }
             else {
                 //isFlashOn = !isFlashOn;
                 turnONflash();
+                flashButton.Source = "flash_on.png";
             }
             
 
