@@ -8,7 +8,8 @@
                  Clicked="ImageButton_Clicked"
                  BackgroundColor="Transparent"
                  Source="flash_off.png"
-                 
+                 HeightRequest="24"
+                 WidthRequest="24"
                  ></ImageButton>
 
 </ContentPage>
