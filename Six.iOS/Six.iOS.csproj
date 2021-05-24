@@ -138,5 +138,7 @@
     <BundleResource Include="Resources\qr_overlay_bottom_right.png" />
     <BundleResource Include="Resources\qr_overlay_top_left.png" />
     <BundleResource Include="Resources\qr_overlay_top_right.png" />
+    <BundleResource Include="Resources\close.png" />
+    <BundleResource Include="Resources\help.png" />
   </ItemGroup>
 </Project>

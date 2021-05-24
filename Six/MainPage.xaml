@@ -27,62 +27,84 @@
 
         <StackLayout>
 
-        <StackLayout>
-            <Grid
+            <!--<StackLayout
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            Orientation="Horizontal">
+
+                <ImageButton
+                 x:Name="flashButton"
+                 Clicked="ImageButton_Clicked"
+                 BackgroundColor="Transparent"
+                 Source="flash_off.png"
+                 HeightRequest="16"
+                 WidthRequest="16"
+              ></ImageButton>
+
+                <Label Text="Flash" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"
+              FontSize="Body"
+               ></Label>
+
+            </StackLayout>-->
+
+            <StackLayout>
+                <Grid
                     x:Name="qrOverlayFrame"
                     VerticalOptions="StartAndExpand"
                     HorizontalOptions="CenterAndExpand"
                     Margin="50,70,50,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="25"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="25"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
-                <Image
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="25"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Image
                         Grid.Row="0"
                         Grid.Column="0"
                         Source="qr_overlay_top_left"/>
-                <Image
+                    <Image
                         Grid.Row="0"
                         Grid.Column="2"
                         Source="qr_overlay_top_right"/>
-                <Image
+                    <Image
                         Grid.Row="2"
                         Grid.Column="0"
                         Source="qr_overlay_bottom_left"/>
-                <Image
+                    <Image
                         Grid.Row="2"
                         Grid.Column="2"
                         Source="qr_overlay_bottom_right"/>
-            </Grid>
-        </StackLayout>
+                </Grid>
+            </StackLayout>
 
-        <StackLayout
+            <StackLayout
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Orientation="Horizontal">
 
-            <ImageButton
-               x:Name="flashButton"
-               Clicked="ImageButton_Clicked"
+                <ImageButton
+                   x:Name="flashButton"
+                  Clicked="ImageButton_Clicked"
                  BackgroundColor="Transparent"
                  Source="flash_off.png"
-                 HeightRequest="40"
-                 WidthRequest="40"
-        ></ImageButton>
+                 HeightRequest="16"
+                 WidthRequest="16"
+              ></ImageButton>
 
-            <Label Text="Flash" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"
+                <Label Text="Flash" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"
               FontSize="Body"
                ></Label>
 
-        </StackLayout>
-
             </StackLayout>
+
+        </StackLayout>
     </AbsoluteLayout>
 
+
+   
 </ContentPage>

@@ -29,18 +29,20 @@ namespace Six
                 //isFlashOn = !isFlashOn;
                 turnOFFflash();
                 flashButton.Source = "flash_off.png";
-                
+
             }
-            else {
+            else
+            {
                 //isFlashOn = !isFlashOn;
                 turnONflash();
                 flashButton.Source = "flash_on.png";
             }
-            
+
 
         }
 
-        async public void turnONflash() {
+        async public void turnONflash()
+        {
             try
             {
                 // Turn On Flashlight  
@@ -60,7 +62,8 @@ namespace Six
             }
         }
 
-        async public void turnOFFflash() {
+        async public void turnOFFflash()
+        {
             try
             {
                 // Turn Off Flashlight  
